@@ -1,0 +1,68 @@
+:root{
+--bg-color: #E0D9D9;
+--header-color: #2F5755;
+--header-text: #DC143C;
+--footer-color: #9892f2;
+--footer-text: #201c43;
+--main-color: #000B58;
+--second-color: #344F1F;
+--third-color: #006A67;
+}
+
+.footer{
+      bottom: 0;
+      display: flex;
+      height: 8.240rem;
+      flex-direction: column;
+      background-color: var(--footer-color);
+
+      .social-icons{      
+            margin: 1rem 0;
+            ul{
+                  list-style-type: none;
+                  justify-content: center;
+                  display: flex;
+                  li{
+                        margin: 0 .3125rem;
+                        .social-icon{
+                              color: var(--main-color);
+                              transition: all 0.4s ease-in-out;
+                              font-size: 1.3rem;
+                        }
+                        .youtube:hover{
+                              color: red;
+                        }
+                        .linkedin:hover{
+                              color: rgb(23, 121, 197);
+                        }
+                        .github:hover{
+                              color: black;
+                        }
+                  }
+            }
+      }
+      ul{
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+            li{
+                  line-height: 2rem;
+                  margin: 0 0.8750rem;
+                  a{
+                        text-decoration: none;
+                        color: var(--main-color);
+                        font-weight: 600;
+                        transition: all 0.4s ease-in-out;
+                  }
+                  a:hover{
+                        color: var(--bg-color);
+                  }
+            }
+      }
+      p{
+            display: flex;
+            justify-content: center;
+            font-weight: bold;
+            color: var(--main-color);
+      }
+}
