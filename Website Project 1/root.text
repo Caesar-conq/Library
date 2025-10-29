@@ -1,0 +1,14 @@
+--bg-color: #E0D9D9;
+--header-color: #2F5755;
+--header-text: #DC143C;
+--footer-color: #59AC77;
+--footer-text: #6B3F69;
+--main-color: #000B58;
+--second-color: #344F1F;
+--third-color: #006A67; 
+
+
+--text-preset-1: font-size: clamp(1.25rem, -0.7031rem + 6.25vw, 2.8125rem);
+--text-preset-2: font-size: clamp(1.125rem, -0.75rem + 6vw, 2.625rem);
+--text-preset-3: font-size: clamp(1rem, -0.7188rem + 5.5vw, 2.375rem);
+--text-preset-4: font-size: clamp(1rem, 0.375rem + 2vw, 1.5rem);
