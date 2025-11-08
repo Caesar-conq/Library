@@ -1,6 +1,0 @@
-:root{
-      --bg-color: #F4F4F4;
-      --title-color: #0C2B4E;
-      --text-color: #1A3D64;
-      --border-color: #1D546C;
-}
