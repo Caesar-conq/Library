@@ -1,0 +1,34 @@
+.footer{
+      width: 100%;
+      background-color: var(--main-bg);
+      height: 8.6875rem;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      
+      nav{
+            .navbar{
+                  list-style-type: none;
+                  display: flex;
+                  gap: 2rem;
+
+                  li{
+                        a{
+                              color: var(--main-clr);
+                              text-decoration: none;
+                              transition: all 0.4s ease-in-out;
+                        }
+                        a:hover{
+                              color: var(--main-hvr);
+                        }
+                  }
+            }
+      }
+      span{
+            color: var(--main-hvr);
+            margin: 1rem 0;
+            font-weight: 600;
+      }
+}

@@ -1,0 +1,7 @@
+:root{
+      --website-bg: #ffffff;
+      --main-bg: #232338ff;
+      --main-clr: #ffffffff;
+      --main-hvr: #4747baff;
+      --component-bg: #7e7eacff#;
+}
