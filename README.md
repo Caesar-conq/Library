@@ -1,1 +1,1 @@
-<a href="https://www.masterorganicchemistry.com/">Organik Kimya</a> genel olarak zor bir ders, özellikle biyoloji ve kimya öğrencileri için... Bu nedenle bu site var burada! Bu siteye tıklayarak istediğiniz konuları öğrenebilirsiniz, ancak unutmayın ki site İngilizce, bu nedenle hocanızla paralel gitmeniz şart. 
+
