@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAABHElEQVR4AaSS0XHCQAxE91IJqQSoBKgEpxKgEugk7sR574ydu5n4K8wt0klaaXXjj/zjt0mepukMnuC81f9PMoQDhBsYwe19x+3PSqZgBwZByRO8SikX7B3YQAz461nJRJx0wu6B50CjCUfZO6w4EfvGr6clK9VJj5pJlPyV2WLi/ZhEhTZKS36RuAIVKPkTfyGYs/myjvGO7EQL4GREnr6NnGKxVlhnTUd2X4tMWKR/KaU41btxfev0O7KT3Mk99ZW4R4EP5N33ED5kbdbu7KRKqG15GOzy0rhxovkRNdZ2k53qPiaEEn00rXfxgGjMZr9kgnYcsEoTSrtSVSUbB5sfCXXzochp7m6D4/s+J5v/ducmnEC4g01ikvwAAAD//++2TwcAAAAGSURBVAMACL9sH/mU0/IAAAAASUVORK5CYII="
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./css/app.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Universal Atom - Emirhan Cesur</title>
+    <link rel="import" href="todo.html" />
+    <link rel="import" href="documentation.html" />
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="header-head">
+        <!-- Farklı image'lar eklenip çıkarılabilir. Değişiklikler olabilir. -->
+        <img
+          class="header-img"
+          src="./img/universal atom (2).png"
+          alt="Universal Atom Logo"
+        />
+      </div>
+      <nav class="navbar" id="navbar">
+        <ul class="nav-links">
+          <li><a href="app.html" target="_blank">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="documentation.html">Documents</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <!-- Burası satın almalar için gerçekleştirdiğim kısım, ilerde geliştireceğim. -->
+        <!-- <a class="user market" href="#marketplace"
+          ><i class="bx bx-cart"></i
+        ></a> -->
+        <a
+          class="user account"
+          href="https://github.com/Caesar-conq/Library/tree/main"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a href="#" class="login-btn"> Login </a>
+      </nav>
+      <i class="bx bx-menu" id="menu-icon"></i>
+    </header>
+    <!-- HEADER END -->
+
+    <main class="main" id="main">
+      <h1 class="main-title">
+        <span>Search in the Universal Atom</span>
+        <i class="bx bx-atom"></i>
+      </h1>
+      <section class="section first">
+        <!-- <img src="/App/img/wave_img_.png" alt="Wave image" /> Fotoğrafla ilgili problemlerim var-->
+        <label class="search-input-label">
+          <i class="bx bx-search"></i>
+          <input
+            type="text"
+            id="search-input"
+            placeholder="E.g. documents..."
+          />
+          <i class="bx-x bx"></i>
+        </label>
+        <div class="card-container">
+          <div class="card">
+            <h1 class="card-title">To-do</h1>
+            <p class="text">
+              This card is for the <b>To-do</b> list state. You can access to
+              the to-do list when you clicked to the "To-do" link. If you can't
+              take notes or forget your responsibilities, you can write and save
+              what you will do in this statement.
+            </p>
+            <button type="button" class="read-more">Read More</button>
+            <a href="todo.html" class="link">To-do</a>
+          </div>
+          <div class="card">
+            <h1 class="card-title">Documents</h1>
+            <div class="card-wrapper">
+              <p class="text">
+                This is the <b>Documents</b> card container that you can take
+                documents for the chemistry and the under departments of
+                chemistry science. This statement includes the document of
+                <b>General Chemistry I & II</b>,
+                <b>Anorganic Chemistry I & II</b>.
+              </p>
+            </div>
+            <button type="button" class="read-more">Read More</button>
+            <a href="documentation.html" class="link">Documents</a>
+          </div>
+          <div class="card">
+            <h1 class="card-title">Notes App</h1>
+            <p class="text">
+              This is the <b>Notes</b> app that you can take your notes for
+              everything whatever you want.
+            </p>
+            <button type="button" class="read-more">Read More</button>
+            <a href="notes.html" class="link">Notes</a>
+          </div>
+        </div>
+      </section>
+      <section class="section second"></section>
+      <!-- Buraya sitenin contentleri eklenecektir. Değişiklikler olabilir. -->
+    </main>
+
+    <!-- MAİN END -->
+    <!-- Footer sabit kalacaktır. Farklı sosyal medyalar eklenip çıkarılabilir. -->
+    <footer class="footer" id="footer">
+      <img
+        class="header-img"
+        src="./img/universal atom (2).png"
+        alt="Universal Atom Logo"
+      />
+      <div class="social-media">
+        <a class="icon reddit" href="#"><i class="fa-brands fa-reddit"></i></a>
+        <a class="icon x" href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        <a class="icon instagram" href="#"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a class="icon youtube" href="#"
+          ><i class="fa-brands fa-youtube"></i
+        ></a>
+        <a class="icon github" href="#"><i class="fa-brands fa-github"></i></a>
+      </div>
+      <nav class="navbar">
+        <ul class="footer-links">
+          <li><a href="app.html" target="_blank">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="documentation.html">Documents</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <ul class="footer-links">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Help</a></li>
+          <li><a href="#">FAQs</a></li>
+        </ul>
+      </nav>
+      <p class="footer-text">
+        &copy;
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        Universal Atom. All rights reserved.
+      </p>
+    </footer>
+
+    <!-- FOOTER END -->
+    <script src="./js/app.js"></script>
+  </body>
+</html>

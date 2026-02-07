@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAABHElEQVR4AaSS0XHCQAxE91IJqQSoBKgEpxKgEugk7sR574ydu5n4K8wt0klaaXXjj/zjt0mepukMnuC81f9PMoQDhBsYwe19x+3PSqZgBwZByRO8SikX7B3YQAz461nJRJx0wu6B50CjCUfZO6w4EfvGr6clK9VJj5pJlPyV2WLi/ZhEhTZKS36RuAIVKPkTfyGYs/myjvGO7EQL4GREnr6NnGKxVlhnTUd2X4tMWKR/KaU41btxfev0O7KT3Mk99ZW4R4EP5N33ED5kbdbu7KRKqG15GOzy0rhxovkRNdZ2k53qPiaEEn00rXfxgGjMZr9kgnYcsEoTSrtSVSUbB5sfCXXzochp7m6D4/s+J5v/ducmnEC4g01ikvwAAAD//++2TwcAAAAGSURBVAMACL9sH/mU0/IAAAAASUVORK5CYII="
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./css/app.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Universal Atom - Emirhan Cesur</title>
+    <link rel="import" href="todo.html" />
+    <link rel="import" href="documentation.html" />
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="header-head">
+        <!-- Farklı image'lar eklenip çıkarılabilir. Değişiklikler olabilir. -->
+        <img
+          class="header-img"
+          src="./img/universal atom (2).png"
+          alt="Universal Atom Logo"
+        />
+      </div>
+      <nav class="navbar" id="navbar">
+        <ul class="nav-links">
+          <li><a href="app.html" target="_blank">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="documentation.html">Documents</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <!-- Burası satın almalar için gerçekleştirdiğim kısım, ilerde geliştireceğim. -->
+        <!-- <a class="user market" href="#marketplace"
+          ><i class="bx bx-cart"></i
+        ></a> -->
+        <a
+          class="user account"
+          href="https://github.com/Caesar-conq/Library/tree/main"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a href="#" class="login-btn"> Login </a>
+      </nav>
+      <i class="bx bx-menu" id="menu-icon"></i>
+    </header>
+    <main class="notes-main">
+      <h1 class="main-head">
+        <span>Notes App</span>
+        <i class="bx bx-note-book"></i>
+      </h1>
+      <form id="notes-form">
+        <textarea id="notes-input"></textarea>
+        <button id="add-btn">Add a Note</button>
+      </form>
+      <div id="note-container">
+        <div class="note">
+          <div class="note-content">
+            <button class="dlt-btn">
+              <i class="bx bx-x"></i>
+            </button>
+            <span class="text-content">
+              This is the test write to learn where the card content is. English
+              language is one of the easiest languages in the World. Actually
+              everything that you want to learn is so easy if you want to learn
+              it. Just; you need to practise, trust yourself and learn more
+              about it's topics.
+            </span>
+          </div>
+          <button class="read-more">Read More</button>
+        </div>
+      </div>
+    </main>
+    <footer class="footer" id="footer">
+      <img
+        class="header-img"
+        src="./img/universal atom (2).png"
+        alt="Universal Atom Logo"
+      />
+      <div class="social-media">
+        <a class="icon reddit" href="#"><i class="fa-brands fa-reddit"></i></a>
+        <a class="icon x" href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        <a class="icon instagram" href="#"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a class="icon youtube" href="#"
+          ><i class="fa-brands fa-youtube"></i
+        ></a>
+        <a class="icon github" href="#"><i class="fa-brands fa-github"></i></a>
+      </div>
+      <nav class="navbar">
+        <ul class="footer-links">
+          <li><a href="app.html" target="_blank">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="documentation.html">Documents</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <ul class="footer-links">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Help</a></li>
+          <li><a href="#">FAQs</a></li>
+        </ul>
+      </nav>
+      <p class="footer-text">
+        &copy;
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        Universal Atom. All rights reserved.
+      </p>
+    </footer>
+
+    <!-- FOOTER END -->
+    <script src="./js/app.js"></script>
+    <script src="/App/js/notes.js"></script>
+  </body>
+</html>

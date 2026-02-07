@@ -1,0 +1,139 @@
+:root{
+--doc-txt: #343434;
+--doc-btn: #0E213D;
+--doc-btn-txt: #ffffff;
+--doc-icon-hvr: red;
+--doc-outline: #949494;
+--card-txt: #343434;
+--doc-title-txt: #1c568d;
+}
+
+.doc-main{
+      height: auto;
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-direction: column;
+      padding: 1rem 2rem;
+
+      & .main-head{
+            font-size: 2.25rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--doc-title-txt);
+      }
+      & #doc-form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: auto;
+            margin-bottom: 1rem;
+
+            & #textarea{
+                  resize: none;
+                  width: 55vw;
+                  height: 50vh;
+                  border: .125rem solid var(--doc-outline);
+                  border-radius: .5rem;
+                  color: var(--doc-txt);
+                  padding: .3125rem;
+                  transition: all 0.4s ease-in-out;
+                  margin-bottom: .625rem;
+            }
+            #textarea:focus, #textarea:hover{
+                  border: .125rem solid green;
+            }
+            & #add-btn{
+                  color: var(--doc-btn-txt);
+                  border: none;
+                  width: 55vw;
+                  padding: 0.5rem;
+                  border-radius: .375rem;
+                  background-color: var(--doc-btn);
+                  transition: all 0.4s ease-in-out;
+                  cursor: pointer;
+            }
+            #add-btn:hover{
+                  background-color: green;
+            }
+      }
+      #card-container{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            width: 100%;
+            .card{
+                  display: flex;
+                  margin: 1rem;
+                  align-items: flex-start;
+                  justify-content: space-between;
+                  flex-direction: column;
+                  width: 18.75rem;
+                  border: .125rem solid var(--doc-btn);
+                  padding: 1rem;
+                  border-radius: .5rem;
+                  height: 10.9375rem;
+                  transition: all 0.4s ease-in-out;
+
+                  & .card-content{
+                        display: -webkit-box;
+                        overflow: hidden;
+                        -webkit-box-orient: vertical;
+                        -webkit-line-clamp: 3;
+                        line-clamp: 3;
+                        line-height: 1.75;
+                        
+                        & .dlt-btn{
+                              border: none;
+                              background-color: transparent;
+                              cursor: pointer;
+                              font-size: 1.35rem;
+                              color: var(--card-txt);
+                              transition: all 0.4s ease-in-out;
+                        }
+                        .dlt-btn:hover{
+                              color: red;
+                        }
+                        & .card-text{
+                              color: var(--card-txt);
+                              font-weight: 600;
+                        }
+                  }
+                  & .read-more{
+                              border: .125rem solid transparent;
+                              border-radius: .3125rem;
+                              padding: .1875rem;
+                              font-weight: bold;
+                              color: var(--doc-btn-txt);
+                              background-color: var(--doc-btn);
+                              transition: all 0.4s ease-in-out;
+                              cursor: pointer;
+                        }
+                        .read-more:hover{
+                              background-color: green;
+                        }      
+            }
+            .card:hover{
+                  border-color: green;
+                  transform: translateY(-0.5rem);
+            }
+      }
+}
+@media screen and (max-width: 48rem) {
+      .doc-main{
+            #doc-form{
+                  width: 100%;
+
+                  #textarea{
+                        width: 100%;
+                        height: 40vh;
+                  }
+                  #add-btn{
+                        width: 100%;
+                  }
+            }
+      }
+}

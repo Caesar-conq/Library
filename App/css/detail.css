@@ -1,0 +1,38 @@
+.detail-main{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 70vh;
+      height: auto;
+      padding: 0 2rem;
+}
+.detail-main .header-title{
+      display: flex;
+      align-items: center;
+      margin-bottom: 2rem;
+      color: rgb(20, 20, 80);
+}
+.detail-main .not-found{
+      color: rgb(88, 134, 152);
+      font-size: 5rem;
+}
+.detail-main .details{
+      color: darkblue;
+      font-size: 3.5rem;
+}
+.detail-main #detail-content{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: .125rem solid #d8d8d8;
+      text-align: center;
+      padding: 1rem;
+      border-radius: .5rem;
+      transition: all 0.4s ease-in-out;
+      line-height: 2;
+      color: #282828;
+}
+#detail-content:hover{
+      border-color: green;
+}

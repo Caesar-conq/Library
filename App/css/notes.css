@@ -1,0 +1,118 @@
+:root{
+--notes-txt: #343434;
+--notes-btn: #0E213D;
+--notes-btn-txt: #ffffff;
+--notes-icon-hvr: red;
+--card-outline: #d6d6d6;
+--notes-title-txt: rgb(26, 81, 149);
+}
+.notes-main{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+      padding: 1rem 4rem;
+      height: auto;
+
+      & .main-head{
+            display: flex;
+            align-items: center;
+            color: var(--notes-title-txt);
+      }
+      & #notes-form{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+
+            & #notes-input{
+                  width: 55vw;
+                  resize: none;
+                  height: 30vh;
+                  margin-bottom: .625rem;
+                  border: .125rem solid var(--notes-btn);
+                  border-radius: 0.5rem;
+                  transition: all 0.4s ease-in-out;
+                  padding: 1rem;
+            }
+            #notes-input:hover, #notes-input:focus{
+                  border: .125rem solid green;
+            }
+            & #add-btn{
+                  width: 55vw;
+                  background-color: var(--notes-btn);
+                  color: var(--notes-btn-txt);
+                  border: 1px solid transparent;
+                  border-radius: .3125rem;
+                  padding: .375rem;
+                  cursor: pointer;
+                  transition: all 0.4s ease-in-out;
+            }
+            #add-btn:hover{
+                  background-color: green;
+            }
+      }
+      & #note-container{
+            width: 100%;
+            & .note{
+                  width: 100%;
+                  border: .125rem solid var(--card-outline);
+                  padding: 1rem ;
+                  margin: 1rem;
+                  border-radius: .5rem;
+                  transition: all 0.4s ease-in-out;
+                  height: auto;
+
+                  & .note-content{
+                        & .dlt-btn{
+                              border: .0625rem solid transparent;
+                              background-color: transparent;
+                              font-size: 1.35rem;
+                              cursor: pointer;
+                              transition: all 0.4s ease-in-out;
+                              color: var(--notes-btn);
+                        }
+                        .dlt-btn:hover{
+                              color: var(--notes-icon-hvr);
+                        }
+                        .text-content{
+                              color: var(--notes-txt);
+                              font-weight: 600;
+                              white-space: normal;        /* EN ÖNEMLİSİ */
+                              word-break: break-word;
+                              overflow-wrap: break-word;
+                              display: -webkit-box;
+                              -webkit-box-orient: vertical;
+                              -webkit-line-clamp: 3;
+                              line-clamp: 3;
+                              overflow: hidden;
+                        }
+                  }
+                  & .read-more{
+                              background-color: var(--notes-btn);
+                              color: var(--notes-btn-txt);
+                              border: .0625rem solid transparent;
+                              border-radius: .3125rem;
+                              padding: .3125rem;
+                              cursor: pointer;
+                              margin-top: .625rem;
+                              transition: all 0.4s ease-in-out;
+                        }
+                        .read-more:hover{
+                              background-color: green;
+                  }
+            }
+            &
+            .note:hover{
+                  border: .125rem solid var(--notes-btn);
+                  transform: translateY(-0.5rem);
+            }
+            .note.expanded .text-content{
+                  -webkit-line-clamp: unset;
+                  line-clamp: unset;
+            }
+      }
+}
